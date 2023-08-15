@@ -9,5 +9,5 @@ import java.util.List;
 @Repository
 public interface BankDetailRepository extends JpaRepository<BankDetail, Long> {
 
-  List<BankDetail> findByState(String state);
+ // List<BankDetail> findByState(String state);
 }

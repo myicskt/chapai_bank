@@ -25,7 +25,8 @@ public class BankService {
     }
 
     public List<BankDetail> getBankListByState(String state) {
-        return bankDetailRepository.findByState(state);
+       // return bankDetailRepository.findByState(state);
+        return null;
     }
 
 

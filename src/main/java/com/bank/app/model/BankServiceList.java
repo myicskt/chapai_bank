@@ -6,6 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Data
@@ -18,4 +19,10 @@ public class BankServiceList {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     long id;
     String serviceName;
+
+
+    @ManyToMany(mappedBy = "service")
+    List<BankDetail> bankDetail;
+
+
 }

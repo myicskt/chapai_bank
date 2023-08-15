@@ -21,7 +21,9 @@ BankService bankService;
 @GetMapping("/")
     public String getHomePage(){
 
-  return "Welcome to Chapai Bank";
+  //return "Welcome to Chapai Bank";
+  return "index";
+
 }
     @GetMapping("/banks")
     public List<BankDetail> getBanks(){
